@@ -1,0 +1,5 @@
+development:
+  password: secret
+  theme_id: "24704057388"
+  store: example-store.myshopify.com
+  proxy: http://localhost:3000
