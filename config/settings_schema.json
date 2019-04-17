@@ -15,7 +15,8 @@
         { "type": "color", "id": "color_links", "label": "Link", "default": "#000" },
 
       { "type": "header", "content": "Backgrounds" },
-        { "type": "color", "id": "bg_color_page", "label": "Page", "default": "#FFF" }
+        { "type": "color", "id": "bg_color_page", "label": "Page", "default": "#FFF" },
+        { "type": "color", "id": "bg_color_wrapper", "label": "Product and Collection Wrapper", "default": "#FFF" }
     ]
   }
 ]
