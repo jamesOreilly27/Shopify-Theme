@@ -10,9 +10,12 @@
     "name": "Colors",
     "settings": [
       { "type": "header", "content": "Text" },
-        { "type": "color", "id": "color_headings", "label": "Heading Text", "default": "#000" },
-        { "type": "color", "id": "color_body", "label": "Paragraph Text", "default": "#000" },
-        { "type": "color", "id": "color_links", "label": "Links", "default": "#000" }
+        { "type": "color", "id": "color_headings", "label": "Headline", "default": "#000" },
+        { "type": "color", "id": "color_body", "label": "Paragraph", "default": "#000" },
+        { "type": "color", "id": "color_links", "label": "Link", "default": "#000" },
+
+      { "type": "header", "content": "Backgrounds" },
+        { "type": "color", "id": "bg_color_page", "label": "Page", "default": "#FFF" }
     ]
   }
 ]
