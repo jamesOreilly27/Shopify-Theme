@@ -1,0 +1,5 @@
+$color-heading: #{ '"{{ settings.color_headings}}"' };
+
+h1 {
+  color: $color-heading;
+}

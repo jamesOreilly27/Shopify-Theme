@@ -39,7 +39,7 @@ var storeName = 'DBNY',
     devProcessors = [
 	        autoprefixer(),
 	        pxToRem({ rootValue: 16, replace: true, mediaQuery: true }),
-	        cacheBuster({cssPath: '/assets', type:'mtime'})
+          cacheBuster({cssPath: '/assets', type:'mtime'})
 		],
 	prodProcessors = [
 			pxToRem({rootValue: 16, replace: true, mediaQuery: true}),
@@ -128,7 +128,7 @@ function handleSassError(err){
 gulp.task('default', ['css:postsass'], function() {
 	fs.readFile('config.yml', 'utf-8', function(err, _data) {
 		browserSync.init({
-		    proxy: url + '?preview_theme_id=15687811116' ,
+		    proxy: url + '?preview_theme_id=24704057388' ,
 		    open: false,
 		    xip: false, // turn this on if using typekit, point your typekit to xip.io
 		    ghostMode: { // turn this off if you don't want people on the same IP scrolling on you
