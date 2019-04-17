@@ -1,5 +1,6 @@
 $color-heading: #{ '"{{ settings.color_headings}}"' };
 $color-body: #{ '" {{ settings.color_body }}"'};
+$color-links: #{ '" {{ settings.color_links }}"'};
 
 body {
   color: $color-body
@@ -7,4 +8,9 @@ body {
 
 h1 {
   color: $color-heading;
+}
+
+a {
+  color: $color-links;
+  text-decoration: none;
 }
