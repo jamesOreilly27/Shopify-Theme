@@ -1,9 +1,14 @@
+/***** Text Colors *****/
+
 $color-heading: #{ '"{{ settings.color_headings}}"' };
 $color-body: #{ '"{{ settings.color_body }}"' };
 $color-links: #{ '"{{ settings.color_links }}"' };
+
+/***** Backgroun Colors *****/
 $bg-color-page: #{ '"{{ settings.bg_color_page }}"' };
 $bg-color-wrapper: #{ '"{{ settings.bg_color_wrapper }}"' };
 $bg-color-text-wrapper: #{ '"{{ settings.bg_color_text_wrapper }}"' };
+$bg-color-button: #{ '"{{ settings.bg_color_button }}"'};
 
 body {
   color: $color-body;
@@ -16,6 +21,10 @@ body {
 
 .collection-wrapper {
   background-color: $bg-color-wrapper;
+}
+
+button {
+  background-color: $bg-color-button;
 }
 
 h1 {

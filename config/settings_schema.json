@@ -17,7 +17,8 @@
       { "type": "header", "content": "Backgrounds" },
         { "type": "color", "id": "bg_color_page", "label": "Page", "default": "#FFF" },
         { "type": "color", "id": "bg_color_wrapper", "label": "Product and Collection Wrapper", "default": "#FFF" },
-        { "type": "color", "id": "bg_color_text_wrapper", "label": "Text Wrapper", "default": "#FFF" }
+        { "type": "color", "id": "bg_color_text_wrapper", "label": "Text Wrapper", "default": "#FFF" },
+        { "type": "color", "id": "bg_color_button", "label": "Buttons", "default": "#FFF" }
     ]
   }
 ]
