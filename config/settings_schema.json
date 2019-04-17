@@ -10,7 +10,8 @@
     "name": "Colors",
     "settings": [
       { "type": "header", "content": "Text" },
-        { "type": "color", "id": "color_headings", "label": "Headings", "default": "#000" }
+        { "type": "color", "id": "color_headings", "label": "Heading Text", "default": "#000" },
+        { "type": "color", "id": "color_body", "label": "Body Text", "default": "#000" }
     ]
   }
 ]
