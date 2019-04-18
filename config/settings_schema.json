@@ -21,7 +21,11 @@
         { "type": "color", "id": "bg_color_wrapper", "label": "Product and Collection Wrapper", "default": "#FFF" },
         { "type": "color", "id": "bg_color_text_wrapper", "label": "Text Wrapper", "default": "#FFF" },
         { "type": "color", "id": "bg_color_btn", "label": "Buttons", "default": "#FFF" },
-        { "type": "color", "id": "bg_color_btn_click", "label": "Button Click", "default": "#FFF" }
+        { "type": "color", "id": "bg_color_btn_click", "label": "Button Click", "default": "#FFF" },
+
+      { "type": "header", "content": "Borders" },
+        { "type": "color", "id": "border_primary", "label": "Primary", "default": "#FFF" },
+        { "type": "color", "id": "border_secondary", "label": "Secondary", "default": "#FFF" }
     ]
   }
 ]

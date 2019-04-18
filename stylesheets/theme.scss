@@ -1,5 +1,4 @@
 /***** Text Colors *****/
-
 $color-heading: #{ '"{{ settings.color_headings}}"' };
 $color-body: #{ '"{{ settings.color_body }}"' };
 $color-links: #{ '"{{ settings.color_links }}"' };
@@ -12,6 +11,12 @@ $bg-color-wrapper: #{ '"{{ settings.bg_color_wrapper }}"' };
 $bg-color-text-wrapper: #{ '"{{ settings.bg_color_text_wrapper }}"' };
 $bg-color-btn: #{ '"{{ settings.bg_color_btn }}"' };
 $bg-color-btn-click: #{ '"{{ settings.bg_color_btn_click }}"' };
+
+/***** Border Colors *****/
+
+//These are working when used in the simple 'border' property. For now when you need a border add it as 3 separate properties... width, style, color
+$border-primary: #{ '"{{ settings.border_primary }}"' };
+$border-secondary: #{ '"{{ settings.border_secondary }}"' };
 
 body {
   color: $color-body;
@@ -29,6 +34,9 @@ body {
 button {
   color: $color-btn;
   background-color: $bg-color-btn;
+  border-style: solid;
+  border-color: $border-secondary;
+  border-width: 2px;
   &:active {
     background-color: $bg-color-btn-click;
   }
