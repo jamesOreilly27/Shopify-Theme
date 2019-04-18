@@ -4,6 +4,7 @@ $color-heading: #{ '"{{ settings.color_headings}}"' };
 $color-body: #{ '"{{ settings.color_body }}"' };
 $color-links: #{ '"{{ settings.color_links }}"' };
 $color-btn: #{ '"{{ settings.color_btn }}"' };
+$color-links-hover: #{ '"{{ settings.color_links_hover }}"'};
 
 /***** Backgroun Colors *****/
 $bg-color-page: #{ '"{{ settings.bg_color_page }}"' };
@@ -36,4 +37,8 @@ h1 {
 a {
   color: $color-links;
   text-decoration: none;
+  &:hover {
+    color: $color-links-hover;
+    transition: .3s
+  }
 }
