@@ -1,10 +1,31 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Themekit template theme",
+    "theme_name": "theme-template",
     "theme_version": "1.0.0",
     "theme_author": "Shopify",
     "theme_documentation_url": "https://github.com/Shopify/themekit",
     "theme_support_url": "https://github.com/Shopify/themekit/issues"
+  }, {
+    "name": "Colors",
+    "settings": [
+      { "type": "header", "content": "Text" },
+        { "type": "color", "id": "color_headings", "label": "Headline", "default": "#000" },
+        { "type": "color", "id": "color_body", "label": "Paragraph", "default": "#000" },
+        { "type": "color", "id": "color_links", "label": "Link", "default": "#000" },
+        { "type": "color", "id": "color_links_hover", "label": "Link Hover", "default": "#000" },
+        { "type": "color", "id": "color_btn", "label": "Button", "default": "#000" },
+
+      { "type": "header", "content": "Backgrounds" },
+        { "type": "color", "id": "bg_color_page", "label": "Page", "default": "#FFF" },
+        { "type": "color", "id": "bg_color_wrapper", "label": "Product and Collection Wrapper", "default": "#FFF" },
+        { "type": "color", "id": "bg_color_text_wrapper", "label": "Text Wrapper", "default": "#FFF" },
+        { "type": "color", "id": "bg_color_btn", "label": "Buttons", "default": "#FFF" },
+        { "type": "color", "id": "bg_color_btn_click", "label": "Button Click", "default": "#FFF" },
+
+      { "type": "header", "content": "Borders" },
+        { "type": "color", "id": "border_primary", "label": "Primary", "default": "#FFF" },
+        { "type": "color", "id": "border_secondary", "label": "Secondary", "default": "#FFF" }
+    ]
   }
 ]

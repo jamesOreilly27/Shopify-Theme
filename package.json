@@ -38,6 +38,7 @@
     "jshint": "^2.10.2",
     "jshint-stylish": "^2.2.1",
     "postcss-cachebuster": "^0.1.6",
-    "postcss-pxtorem": "^3.3.1"
+    "postcss-pxtorem": "^3.3.1",
+    "postcss-shopify-settings-variables": "^0.3.1"
   }
 }
