@@ -4,13 +4,14 @@ $color-heading: #{ '"{{ settings.color_headings}}"' };
 $color-body: #{ '"{{ settings.color_body }}"' };
 $color-links: #{ '"{{ settings.color_links }}"' };
 $color-btn: #{ '"{{ settings.color_btn }}"' };
-$color-links-hover: #{ '"{{ settings.color_links_hover }}"'};
+$color-links-hover: #{ '"{{ settings.color_links_hover }}"' };
 
 /***** Backgroun Colors *****/
 $bg-color-page: #{ '"{{ settings.bg_color_page }}"' };
 $bg-color-wrapper: #{ '"{{ settings.bg_color_wrapper }}"' };
 $bg-color-text-wrapper: #{ '"{{ settings.bg_color_text_wrapper }}"' };
-$bg-color-button: #{ '"{{ settings.bg_color_button }}"'};
+$bg-color-btn: #{ '"{{ settings.bg_color_btn }}"' };
+$bg-color-btn-click: #{ '"{{ settings.bg_color_btn_click }}"' };
 
 body {
   color: $color-body;
@@ -27,7 +28,10 @@ body {
 
 button {
   color: $color-btn;
-  background-color: $bg-color-button;
+  background-color: $bg-color-btn;
+  &:active {
+    background-color: $bg-color-btn-click;
+  }
 }
 
 h1 {
