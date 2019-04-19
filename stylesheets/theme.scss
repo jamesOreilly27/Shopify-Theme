@@ -14,7 +14,6 @@ $bg-color-btn: #{ '"{{ settings.bg_color_btn }}"' };
 $bg-color-btn-click: #{ '"{{ settings.bg_color_btn_click }}"' };
 
 /*** Border Colors ***/
-
 //These are working when used in the simple 'border' property. For now when you need a border add it as 3 separate properties... width, style, color
 $border-primary: #{ '"{{ settings.border_primary }}"' };
 $border-secondary: #{ '"{{ settings.border_secondary }}"' };
@@ -22,9 +21,18 @@ $border-secondary: #{ '"{{ settings.border_secondary }}"' };
 /********** Fonts **********/
 /*** Font Families ***/
 $header-font: var(--header-font);
+$link-font: var(--link-font);
+$body-font: var(--body-font);
+
+/*** Font Size ***/
+$header-font-size: var(--header-font-size);
+$link-font-size: var(--link-font-size);
+$body-font-size: var(--body-font-size);
 
 body {
   color: $color-body;
+  font-family: $body-font;
+  font-size: $body-font-size;
   background-color: $bg-color-page;
 }
 
@@ -50,10 +58,13 @@ button {
 h1 {
   color: $color-heading;
   font-family: $header-font;
+  font-size: $header-font-size
 }
 
 a {
   color: $color-links;
+  font-family: $link-font;
+  font-size: $link-font-size;
   text-decoration: none;
   &:hover {
     color: $color-links-hover;
