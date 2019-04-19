@@ -1,12 +1,14 @@
 <style>
   {{ settings.header_font | font_face }}
   {{ settings.link_font | font_face }}
+  {{ settings.body_font | font_face }} 
 
   :root {
     --header-font: {{ settings.header_font.family }};
     --header-font-size: {{ settings.header_font_size }}vw;
     --link-font: {{ settings.link_font.family }};
     --link-font-size: {{ settings.link_font_size }}vw;
+    --body-font: {{ settings.body_font.family }};
   }
 
 </style>
