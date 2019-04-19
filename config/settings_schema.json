@@ -31,7 +31,8 @@
     "name": "Typography",
     "settings": [
       { "type": "header", "content": "Headlines" },
-        { "type": "font_picker", "id": "header_font", "label": "Headings", "default": "beefcakes_n4" }
+        { "type": "font_picker", "id": "header_font", "label": "Font", "default": "beefcakes_n4" },
+        { "type": "range", "id": "header_font_size", "label": "Font Size", "min": 3, "max": 7, "step": 0.2, "unit": "vw", "default": 5 }
     ]
   }
 ]

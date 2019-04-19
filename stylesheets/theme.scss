@@ -23,6 +23,9 @@ $border-secondary: #{ '"{{ settings.border_secondary }}"' };
 /*** Font Families ***/
 $header-font: var(--header-font);
 
+/*** Font Size ***/
+$header-font-size: var(--header-font-size);
+
 body {
   color: $color-body;
   background-color: $bg-color-page;
@@ -50,6 +53,7 @@ button {
 h1 {
   color: $color-heading;
   font-family: $header-font;
+  font-size: $header-font-size
 }
 
 a {
