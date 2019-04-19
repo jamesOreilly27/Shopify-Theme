@@ -22,6 +22,7 @@ $border-secondary: #{ '"{{ settings.border_secondary }}"' };
 /********** Fonts **********/
 /*** Font Families ***/
 $header-font: var(--header-font);
+$link-font: var(--link-font);
 
 /*** Font Size ***/
 $header-font-size: var(--header-font-size);
@@ -58,6 +59,7 @@ h1 {
 
 a {
   color: $color-links;
+  font-family: $link-font;
   text-decoration: none;
   &:hover {
     color: $color-links-hover;
