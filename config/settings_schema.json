@@ -27,5 +27,11 @@
         { "type": "color", "id": "border_primary", "label": "Primary", "default": "#FFF" },
         { "type": "color", "id": "border_secondary", "label": "Secondary", "default": "#FFF" }
     ]
+  }, {
+    "name": "Typography",
+    "settings": [
+      { "type": "header", "content": "Headlines" },
+        { "type": "font_picker", "id": "header_font", "label": "Headings", "default": "beefcakes_n4" }
+    ]
   }
 ]
