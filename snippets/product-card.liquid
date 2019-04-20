@@ -1,0 +1,13 @@
+<div class="product-wrapper">
+  <div class="product-image">
+    <a href="{{ product.url | within: collection }}">
+      <img src="{{ product.featured_image.src | product_img_url: 'medium' }}" alt="{{ product.featured_image.alt | escape }}" />
+    </a>
+  </div>
+  <div class="product-title">
+    {{ product.title }}
+  </div>
+  <div class="product-price">
+    {{ product.price }}
+  </div>
+</div>
