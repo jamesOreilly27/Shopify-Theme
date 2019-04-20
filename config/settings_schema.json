@@ -42,5 +42,10 @@
         { "type": "font_picker", "id": "body_font", "label": "Font", "default": "helvetica_n4" },
         { "type": "range", "id": "body_font_size", "label": "Font Size", "min": 1, "max": 2, "step": 0.1, "unit": "vw", "default": 1.5 }
     ]
+  }, {
+    "name": "Cart",
+    "settings": [
+      { "type": "checkbox", "id": "cart_notes_enable", "label": "Enable Cart Notes", "default": false }
+    ]
   }
 ]

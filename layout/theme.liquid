@@ -14,6 +14,7 @@
 <body>
 
 <h1>{{ shop.name }} </h1>
+<script> console.log({{ settings.cart_notes_enabled}}) </script>
   {% for link in linklists.main-menu.links %}
     {% assign child_list_handle = link.title | handleize %}
     {% if linklists[child_list_handle].links != blank %}
