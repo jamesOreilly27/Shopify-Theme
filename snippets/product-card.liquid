@@ -8,6 +8,6 @@
     {{ product.title }}
   </div>
   <div class="product-price">
-    {{ product.price }}
+    ${{ product.price | divided_by: 100}}.00
   </div>
 </div>
