@@ -1,0 +1,26 @@
+<section class="collection-wrapper">
+  {% if section.settings.title != blank %}
+    <h2 class="featured-collection__title">{{ section.settings.title | escape }}</h2>
+  {% endif %}
+
+  {%- assign collection = collections[section.settings.collection] -%}
+
+  <div class="product-cards">
+    {% for product in collection.products limit: 6 %}
+      {% include 'product-card' with product %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Featured Collection",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Heading", "default": "Featured Collection" },
+    { "id": "collection", "type": "collection", "label": "Collection" }
+  ],
+  "presets": [
+    { "name": "Featured Collection", "category": "Collection" }
+  ]
+}
+{% endschema %}
