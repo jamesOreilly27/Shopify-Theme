@@ -47,5 +47,10 @@
     "settings": [
       { "type": "checkbox", "id": "cart_notes_enable", "label": "Enable Cart Notes", "default": false }
     ]
+  }, {
+    "name": "Favicon",
+    "settings": [
+      { "type": "image_picker", "id": "favicon", "label": "Favicon Image" }
+    ]
   }
 ]
