@@ -1,3 +1,14 @@
+<section>
+<div>
+  {% for block in section.blocks %}
+    {%- assign collection = collections[block.settings.collection] -%}
+    <div>
+      {% include 'collection-card' with collection %}
+    </div>
+  {% endfor %}
+</div>
+</section>
+
 {% schema %}
   {
     "name": "Collection List",
