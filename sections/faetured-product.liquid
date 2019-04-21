@@ -1,9 +1,6 @@
 <section>
   {%- assign product = all_products[section.settings.product] -%}
-  {% comment %}
-  use product card to test that section is work properly. This will be filled in later
-  {% endcomment %}
-  {% include 'product-card' with product %}
+  {% include 'product-detail' with product %}
 </section>
 
 {% schema %}
