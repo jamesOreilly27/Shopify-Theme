@@ -1,0 +1,5 @@
+<div class="collection-card">
+  <a href="{{ collection.url | default: "#" }}" {{ block.shopify_attributes }}>
+    <img src="{{ collection.image | collection_img_url: 'original' }}" alt="{{ collection.products.first.featured_img }}" />
+  </a>
+</div>
