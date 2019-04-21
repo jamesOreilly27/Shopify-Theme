@@ -1,12 +1,20 @@
+<section>
+  {%- assign product = all_products[section.settings.product] -%}
+  {% comment %}
+  use product card to test that section is work properly. This will be filled in later
+  {% endcomment %}
+  {% include 'product-card' with product %}
+</section>
+
 {% schema %}
   {
     "name": "Featured Product",
     "settings": [
       { "type": "text", "id": "title", "label": "Heading", "default": "Featured Product" },
-       { "id": "product", "type": "product", "label": "Product" },
-       "presets" [
-         { "name": "Featured Product", "category": "Product" }
-       ]
+      { "id": "product", "type": "product", "label": "Product" }
+    ],
+    "presets": [
+      { "name": "Featured Product", "category": "Product" }
     ]
   }
 {% endschema %}
