@@ -1,8 +1,13 @@
-<section class="collection-list">
-  {% for block in section.blocks %}
-    {%- assign collection = collections[block.settings.collection] -%}
-    {% include 'collection-card' with collection %}
-  {% endfor %}
+<section>
+  {% if section.settings.title != blank %}
+    <h2 class="collection-list__title">{{ section.settings.title | escape }}</h2>
+  {% endif %}
+  <div class="collection-list">
+    {% for block in section.blocks %}
+      {%- assign collection = collections[block.settings.collection] -%}
+      {% include 'collection-card' with collection %}
+    {% endfor %}
+  </div>
 </section>
 
 {% schema %}
