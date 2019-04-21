@@ -1,12 +1,8 @@
-<section>
-<div>
+<section class="collection-list">
   {% for block in section.blocks %}
     {%- assign collection = collections[block.settings.collection] -%}
-    <div>
-      {% include 'collection-card' with collection %}
-    </div>
+    {% include 'collection-card' with collection %}
   {% endfor %}
-</div>
 </section>
 
 {% schema %}
