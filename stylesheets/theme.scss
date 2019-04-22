@@ -65,13 +65,11 @@ body {
 .product-detail-container {
   display: flex;
   justify-content: space-around;
-  background-color: red;
   width: 90vw;
   margin: 0 5vw;
 }
 
 .image-container {
-  background-color: green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,9 +91,11 @@ body {
 
 .details-container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 35vw;
   height: 40vw;
-  background-color: rgb(251, 255, 0);
 }
 
 .product-display-image {
