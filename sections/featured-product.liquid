@@ -1,0 +1,21 @@
+<section>
+  {%- assign product = all_products[section.settings.product] -%}
+  {%- assign image = product.images[1] -%}
+  {% include 'product-detail' with product %}
+  <script>
+    
+  </script>
+</section>
+
+{% schema %}
+  {
+    "name": "Featured Product",
+    "settings": [
+      { "type": "text", "id": "title", "label": "Heading", "default": "Featured Product" },
+      { "id": "product", "type": "product", "label": "Product" }
+    ],
+    "presets": [
+      { "name": "Featured Product", "category": "Product" }
+    ]
+  }
+{% endschema %}
