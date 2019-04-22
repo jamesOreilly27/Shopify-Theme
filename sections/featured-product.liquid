@@ -1,6 +1,10 @@
 <section>
   {%- assign product = all_products[section.settings.product] -%}
+  {%- assign image = product.images[1] -%}
   {% include 'product-detail' with product %}
+  <script>
+    
+  </script>
 </section>
 
 {% schema %}
