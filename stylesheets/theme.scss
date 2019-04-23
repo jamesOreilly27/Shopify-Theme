@@ -44,13 +44,17 @@ body {
 
 .logo-container {
   width: 30vw;
-  height: 10vw;
+  height: 5vw;
   background-color: blue;
 }
 
 .navigation-menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 3;
+  justify-content: space-around;
   width: 30vw;
-  height: 10vw;
+  height: 5vw;
   background-color: red;
 }
 
