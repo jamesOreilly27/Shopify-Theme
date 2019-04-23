@@ -1,5 +1,6 @@
 <section id="header">
   <div class="logo-container">
+  <img src="{{ section.settings.logo | img_url: large }}">
 
   </div>
 
@@ -9,7 +10,7 @@
         {{ link.title }}
       </a>
     {% endfor %}
-    <a href="/cart">cart</a>
+    <a href="/cart">Cart</a>
   </div>
 </section>
 
