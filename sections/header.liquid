@@ -1,5 +1,15 @@
 {% schema %}
   {
-    
+    "name": "Header",
+    "settings": [
+      { "type": "header", "content": "Announcement Bar" },
+        { "type": "checkbox", "id": "announce_bar_enabled", "label": "Show announcement", "default": false },
+        { "type": "checkbox", "id": "announce_homepage_only", "label": "Show only on homepage", "default": true },
+        {" type": "text", "id": "announcement_text", "label": "announcement", "default": "Announcement Text" },
+      { "type": "header", "content": "Header" },
+        { "type": "image_picker", "id": "logo", "label": "Logo" },
+        { "type": "range", "id": "loge_max_width", "min": 5, "max": 20, "step": 1, "unit": "vw", "label": "Logo Max Width", "default": 10 },
+        { "type": "link_list", "id": "header_menu", "Label": "Menu", "default": "main-menu"}
+    ]
   }
 {% endschema %}
