@@ -1,17 +1,22 @@
-<section id="header">
-  <div class="logo-container">
-  <img src="{{ section.settings.logo | img_url: large }}">
+<section id="header-container">
+  <div id="header">
+    <div class="logo-container">
+    <img src="{{ section.settings.logo | img_url: large }}">
 
-  </div>
+    </div>
 
-  <div class="navigation-menu">
-    {% for link in linklists[section.settings.header_menu].links %}
-      <a href="{{ link.url }}">
-        {{ link.title }}
-      </a>
-    {% endfor %}
-    <a href="/cart">Cart</a>
+    <div class="navigation-menu">
+      {% for link in linklists[section.settings.header_menu].links %}
+        <a href="{{ link.url }}">
+          {{ link.title }}
+        </a>
+      {% endfor %}
+      <a href="/cart">Cart</a>
+    </div>
   </div>
+  {% if section.settings.announce_bar_enabled %}
+    <h1> {{ section.settings.announcement_text }} </h1>
+  {% endif %}
 </section>
 
 {% schema %}
