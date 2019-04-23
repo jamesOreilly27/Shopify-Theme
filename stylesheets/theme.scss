@@ -36,6 +36,24 @@ body {
   background-color: $bg-color-page;
 }
 
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  height: 15vw;
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 3;
+  justify-content: space-around;
+  height: 4vw;
+}
+
 .product-wrapper {
   background-color: $bg-color-wrapper;
   display: flex;

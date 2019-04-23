@@ -1,0 +1,36 @@
+<section id="header-container">
+  <div id="header">
+    <div class="logo-container">
+    <img src="{{ section.settings.logo | img_url: large }}">
+
+    </div>
+
+    <div class="navigation-menu">
+      {% for link in linklists[section.settings.header_menu].links %}
+        <a href="{{ link.url }}">
+          {{ link.title }}
+        </a>
+      {% endfor %}
+      <a href="/cart">Cart</a>
+    </div>
+  </div>
+  {% if section.settings.announce_bar_enabled %}
+    <h1> {{ section.settings.announcement_text }} </h1>
+  {% endif %}
+</section>
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      { "type": "header", "content": "Announcement Bar" },
+        { "type": "checkbox", "id": "announce_bar_enabled", "label": "Show announcement", "default": false },
+        { "type": "checkbox", "id": "announce_homepage_only", "label": "Show only on homepage", "default": true },
+        { "type": "text", "id": "announcement_text", "label": "announcement", "default": "Announcement Text" },
+      { "type": "header", "content": "Header" },
+        { "type": "image_picker", "id": "logo", "label": "Logo" },
+        { "type": "range", "id": "loge_max_width", "min": 5, "max": 20, "step": 1, "unit": "vw", "label": "Logo Max Width", "default": 10 },
+        { "type": "link_list", "id": "header_menu", "label": "Menu", "default": "main-menu"}
+    ]
+  }
+{% endschema %}
