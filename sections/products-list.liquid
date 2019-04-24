@@ -1,4 +1,4 @@
-<section>
+<section id="products-list-container">
   {% for block in section.blocks%}
     {%- assign product = all_products[block.settings.product] %}
     {% include 'product-card' with product %}
