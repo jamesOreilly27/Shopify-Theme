@@ -1,3 +1,10 @@
+<section>
+  {% for block in section.blocks%}
+    {%- assign product = all_products[block.settings.product] %}
+    {% include 'product-card' with product %}
+  {% endfor %}
+</section>
+
 {% schema %}
   {
     "name": "Product List",
