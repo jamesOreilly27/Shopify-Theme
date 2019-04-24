@@ -1,0 +1,12 @@
+{% schema %}
+{
+  "name": "Image with Text",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "image" },
+    { "type": "header", "content": "Text" },
+      { "type": "font_picker", "id": "font_family", "label": "Font", "default": "helvetica_n4" },
+      { "type": "range", "id": "font_size", "label": "Font Size", "min": 3, "max": 7, "step": 0.2, "unit": "vw", "default": 5 },
+      { "type": "text", "id": "text", "label": "text", "default": "Text" }
+  ]
+}
+{% endschema %}
