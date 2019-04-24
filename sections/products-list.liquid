@@ -1,0 +1,28 @@
+<section id="products-list-container">
+  {% for block in section.blocks%}
+    {%- assign product = all_products[block.settings.product] %}
+    {% include 'product-card' with product %}
+  {% endfor %}
+</section>
+
+{% schema %}
+  {
+    "name": "Product List",
+    "max_blocks": 3,
+    "settings": [{ "type": "text", "id": "title", "label": "Heading", "default": "Product List" }],
+    "blocks": [{
+      "type": "product",
+      "name": "Product",
+      "settings": [{ "label": "Product", "id": "product", "type": "product" }]
+    }],
+    "presets": [{
+      "name": "Product List",
+      "category": "Product",
+      "blocks": [
+        { "type": "product" },
+        { "type": "product" },
+        { "type": "product" }
+      ]
+    }]
+  }
+{% endschema %}
