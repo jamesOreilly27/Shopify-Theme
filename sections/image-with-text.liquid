@@ -1,3 +1,7 @@
+<section>
+  <div> Hello World! </div>
+</section>
+
 {% schema %}
 {
   "name": "Image with Text",
@@ -6,7 +10,12 @@
     { "type": "header", "content": "Text" },
       { "type": "font_picker", "id": "font_family", "label": "Font", "default": "helvetica_n4" },
       { "type": "range", "id": "font_size", "label": "Font Size", "min": 3, "max": 7, "step": 0.2, "unit": "vw", "default": 5 },
-      { "type": "text", "id": "text", "label": "text", "default": "Text" }
-  ]
+      { "type": "text", "id": "title", "label": "Heading", "default": "Image with Text" },
+      { "type": "richtext", "id": "text", "label": "text", "default": "<p> Your Text Here </p>" } 
+  ],
+  "presets": [{
+    "name": "Image with Text",
+    "category": "Image"
+  }]
 }
 {% endschema %}
