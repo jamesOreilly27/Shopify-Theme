@@ -157,6 +157,31 @@ body {
   height: 100%;
 }
 
+.image-with-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-with-text__image {
+  width: 40vw;
+  min-width: 200px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.image-with-text__text {
+  width: 40vw;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
   color: $color-btn;
   background-color: $bg-color-btn;

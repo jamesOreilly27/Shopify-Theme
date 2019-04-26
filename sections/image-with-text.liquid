@@ -1,0 +1,36 @@
+<style>
+  {{ section.settings.font | font_face }}
+
+  .image-with-text__text p { font-family: {{ section.settings.font.family }}; }
+
+  .image-with-text__text p { font-size: {{ section.settings.font_size }}vw; }
+</style>
+
+<section class="image-with-text">
+  <div class="image-with-text__image">
+    <img src="{{ section.settings.image | img_url: '450x450' }}">
+  </div>
+
+  <div class="image-with-text__text">
+    <h1 style="margin: 0"> {{ section.settings.title }} </h1>
+      {{ section.settings.text }}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Image with Text",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "image" },
+    { "type": "header", "content": "Text" },
+      { "type": "font_picker", "id": "font", "label": "Font", "default": "helvetica_n4" },
+      { "type": "range", "id": "font_size", "label": "Font Size", "min": 1.4, "max": 1.7, "step": 0.1, "unit": "vw", "default": 1.4 },
+      { "type": "text", "id": "title", "label": "Heading", "default": "Image with Text" },
+      { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Your Text Here<p>" } 
+  ],
+  "presets": [{
+    "name": "Image with Text",
+    "category": "Image"
+  }]
+}
+{% endschema %}
