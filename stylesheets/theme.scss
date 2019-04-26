@@ -157,6 +157,26 @@ body {
   height: 100%;
 }
 
+.image-with-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-with-text__image {
+  width: 40vw;
+
+  img {
+    width: 100%;
+  }
+}
+
+.image-with-text__text {
+  width: 50vw;
+  height:15vw;
+  background-color: blue;
+}
+
 button {
   color: $color-btn;
   background-color: $bg-color-btn;
