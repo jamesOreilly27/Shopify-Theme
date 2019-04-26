@@ -1,0 +1,18 @@
+{% schema %}
+{
+  "name": "Blog Posts",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Heading", "default": "Blog Posts" },
+    { "id": "blog", "type": "blog", "label": "Blog" },
+    { "type": "range", "id": "post_limit", "label": "Posts", "min": 1, "max": 12, "step": 1, "default": 1 }
+  ],
+  "presets": [{
+    "name": "Blog posts",
+    "category": "Blog",
+    "settings": {
+      "blog": "News",
+      "post_limit": 1
+    }
+  }]
+}
+{% endschema %}
