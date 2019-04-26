@@ -161,10 +161,12 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .image-with-text__image {
   width: 40vw;
+  min-width: 200px;
 
   img {
     width: 100%;
@@ -173,6 +175,7 @@ body {
 
 .image-with-text__text {
   width: 40vw;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
