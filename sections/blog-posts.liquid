@@ -1,3 +1,11 @@
+<section>
+{% assign blog = blogs[section.settings.blog] %}
+{% for article in blog.articles %}
+  {% include 'article-card' with article %}
+{% endfor %}
+
+</section>
+
 {% schema %}
 {
   "name": "Blog Posts",
