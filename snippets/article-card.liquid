@@ -3,6 +3,10 @@
     <img src="{{ article.image | img_url: 'large' }}">
   </div>
 
+  <div>
+    {{ article.title }} {{ article.author }}
+  </div>
+
   <div class="blog-posts__excerpt">
     {{ article.excerpt }}
   </div>
