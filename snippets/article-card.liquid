@@ -1,4 +1,4 @@
-<div class="article-card">
+<a class="article-card" href="{{ article.url }}"">
    <div class="blog-posts__image-container">
     <img src="{{ article.image | img_url: 'large' }}">
   </div>
@@ -6,4 +6,4 @@
   <div class="blog-posts__excerpt">
     {{ article.excerpt }}
   </div>
-</div>
+</a>
