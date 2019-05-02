@@ -1,0 +1,35 @@
+.product-detail__container {
+  display: flex;
+  justify-content: space-around;
+  width: 90vw;
+  margin: 0 5vw;
+}
+
+.product-detail__image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-display-image-container {
+  position: relative;
+  width: 50vw;
+  height: 30vw;
+}
+
+.product-display-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.details-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35vw;
+  height: 40vw;
+}
