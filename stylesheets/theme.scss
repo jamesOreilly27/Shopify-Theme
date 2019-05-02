@@ -7,9 +7,12 @@
 @import './sections/blog-posts';
 @import './sections/image-with-text';
 
-//collections
+/*** collections ***/
 @import './sections/collection-list';
 @import './sections/featured-collection';
+
+/*** products ***/
+@import './sections/featured-product';
 
 #header {
   display: flex;
