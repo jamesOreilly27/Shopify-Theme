@@ -13,6 +13,7 @@
 
 /*** products ***/
 @import './sections/featured-product';
+@import './snippets/product-card';
 
 #header {
   display: flex;
@@ -30,26 +31,6 @@
   flex-grow: 3;
   justify-content: space-around;
   height: 4vw;
-}
-
-.product-wrapper {
-  background-color: $bg-color-wrapper;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30vw;
-  height: 30vw;
-}
-
-.product-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.product-image img {
-  width: 20vw;
-  height: 20vw;
 }
 
 #products-list-container {
