@@ -1,3 +1,11 @@
+<style>
+  {{ section.settings.font | font_face }}
+
+  .blog-posts__excerpt { font-family: {{ section.settings.font.family }}; }
+
+  .blog-posts__excerpt { font-size: {{ section.settings.font_size }}vw; }
+</style>
+
 <section>
 {% assign blog = blogs[section.settings.blog] %}
 {% for article in blog.articles %}
@@ -21,7 +29,9 @@
     "category": "Blog",
     "settings": {
       "blog": "News",
-      "post_limit": 1
+      "post_limit": 1,
+      "font": "helvetica_n4",
+      "font_size": 1.4
     }
   }]
 }

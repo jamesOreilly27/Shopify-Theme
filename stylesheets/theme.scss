@@ -166,7 +166,7 @@ body {
 
 .image-with-text__image {
   width: 40vw;
-  min-width: 225px;
+  min-width: 250px;
 
   img {
     width: 100%;
@@ -175,7 +175,7 @@ body {
 
 .image-with-text__text {
   width: 40vw;
-  min-width: 225px;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,10 +191,10 @@ body {
 }
 
 .blog-posts__image-container {
-  width: 25vw;
+  width: 40vw;
   height: 25vw;
-  min-width: 225px;
-  min-height: 225px;
+  min-width: 250px;
+  min-height: 250px;
   
   img {
     width: 100%;
@@ -203,8 +203,8 @@ body {
 }
 
 .blog-posts__excerpt {
-  width: 60vw;
-  min-width: 225px;
+  width: 40vw;
+  min-width: 250px;
 }
 
 button {
