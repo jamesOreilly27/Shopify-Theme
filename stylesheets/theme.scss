@@ -18,17 +18,6 @@ $bg-color-btn-click: #{ '"{{ settings.bg_color_btn_click }}"' };
 $border-primary: #{ '"{{ settings.border_primary }}"' };
 $border-secondary: #{ '"{{ settings.border_secondary }}"' };
 
-/********** Fonts **********/
-/*** Font Families ***/
-$header-font: var(--header-font);
-$link-font: var(--link-font);
-$body-font: var(--body-font);
-
-/*** Font Size ***/
-$header-font-size: var(--header-font-size);
-$link-font-size: var(--link-font-size);
-$body-font-size: var(--body-font-size);
-
 body {
   color: $color-body;
   font-family: $body-font;
