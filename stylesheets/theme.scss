@@ -6,6 +6,7 @@
 /********** Sections **********/
 @import './sections/blog-posts';
 @import './sections/image-with-text';
+@import './sections/collection-list';
 
 #header {
   display: flex;
@@ -106,21 +107,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.collection-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  padding: 10px;
-}
-
-.collection-card {
-  width: 20vw;
-  min-width: 200px;
-  height: 20vw;
-  min-height: 200px;
-  padding: 10px;
 }
 
 .collection-card img {
