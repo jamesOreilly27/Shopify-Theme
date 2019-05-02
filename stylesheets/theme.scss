@@ -14,7 +14,7 @@ $bg-color-btn: #{ '"{{ settings.bg_color_btn }}"' };
 $bg-color-btn-click: #{ '"{{ settings.bg_color_btn_click }}"' };
 
 /*** Border Colors ***/
-//These are working when used in the simple 'border' property. For now when you need a border add it as 3 separate properties... width, style, color
+//These aren't working when used in the simple 'border' property. For now when you need a border add it as 3 separate properties... width, style, color
 $border-primary: #{ '"{{ settings.border_primary }}"' };
 $border-secondary: #{ '"{{ settings.border_secondary }}"' };
 
@@ -166,7 +166,7 @@ body {
 
 .image-with-text__image {
   width: 40vw;
-  min-width: 200px;
+  min-width: 250px;
 
   img {
     width: 100%;
@@ -175,11 +175,36 @@ body {
 
 .image-with-text__text {
   width: 40vw;
-  min-width: 200px;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.article-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3vw;
+  flex-wrap: wrap;
+}
+
+.blog-posts__image-container {
+  width: 40vw;
+  height: 25vw;
+  min-width: 250px;
+  min-height: 250px;
+  
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.blog-posts__excerpt {
+  width: 40vw;
+  min-width: 250px;
 }
 
 button {
