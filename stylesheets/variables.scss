@@ -1,0 +1,30 @@
+/********** Colors**********/
+/*** Text Colors ***/
+$color-heading: var(--color-heading);
+$color-body: var(--color-body);
+$color-links: var(--color-links);
+$color-btn: var(--color-btn);
+$color-links-hover: var(--color-links-hover);
+
+/*** Backgroun Colors ***/
+$bg-color-page: var(--bg-color-page);
+$bg-color-wrapper: var(--bg-color-wrapper);
+$bg-color-text-wrapper: var(--bg-color-text-wrapper);
+$bg-color-btn: var(--bg-color-btn);
+$bg-color-btn-click: var(--bg-color-btn-click);
+
+/*** Border Colors ***/
+//These aren't working when used in the simple 'border' property. For now when you need a border add it as 3 separate properties... width, style, color
+$border-primary: var(--border-primary);
+$border-secondary: var(--border-secondary);
+
+/********** Fonts **********/
+/*** Font Families ***/
+$header-font: var(--header-font);
+$link-font: var(--link-font);
+$body-font: var(--body-font);
+
+/*** Font Size ***/
+$header-font-size: var(--header-font-size);
+$link-font-size: var(--link-font-size);
+$body-font-size: var(--body-font-size);

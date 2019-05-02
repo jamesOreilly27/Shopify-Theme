@@ -5,7 +5,7 @@
 
   {%- assign collection = collections[section.settings.collection] -%}
 
-  <div class="product-cards">
+  <div class="featured-collection__product-wrapper">
     {% for product in collection.products limit: 6 %}
       {% include 'product-card' with product %}
     {% endfor %}

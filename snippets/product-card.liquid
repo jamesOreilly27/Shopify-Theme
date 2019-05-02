@@ -1,11 +1,11 @@
-<div class="product-wrapper">
-  <div class="product-image" >
+<div class="product-card__wrapper">
+  <div class="product-card__image" >
     <a href="{{ product.url | within: collection }}">
       <img src="{{ product.featured_image.src | product_img_url: 'medium' }}" alt="{{ product.featured_image.alt | escape }}" />
     </a>
   </div>
-  <div class="product-text">
-    <div class="product-title">
+  <div class="product-card__text">
+    <div class="product-card__title">
       {{ product.title }}
     </div>
     <div class="product-price">

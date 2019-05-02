@@ -84,7 +84,7 @@ gulp.task('js:uglify', function(){
 // CSS ------------
 gulp.task('css:postsass', function(){
 	gutil.log(gutil.colors.blue('--> Compiling CSS Stuffs '));
-	gulp.src('stylesheets/*.scss')
+	gulp.src('stylesheets/theme.scss')
 		.pipe(sourceMaps.init())
 		.pipe(sass().on('error', handleSassError))
 		.pipe(postCss(devProcessors))
