@@ -6,7 +6,10 @@
 /********** Sections **********/
 @import './sections/blog-posts';
 @import './sections/image-with-text';
+
+//collections
 @import './sections/collection-list';
+@import './sections/featured-collection';
 
 #header {
   display: flex;
@@ -33,12 +36,6 @@
   align-items: center;
   width: 30vw;
   height: 30vw;
-}
-
-.product-cards {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
 }
 
 .product-text {
@@ -103,6 +100,7 @@
 }
 
 .collection-wrapper {
+  //take
   background-color: $bg-color-wrapper;
   display: flex;
   flex-direction: column;
