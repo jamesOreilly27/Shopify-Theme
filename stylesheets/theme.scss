@@ -4,6 +4,7 @@
 @import './core';
 
 /********** Sections **********/
+@import './sections/header';
 @import './sections/blog-posts';
 @import './sections/image-with-text';
 
@@ -15,24 +16,6 @@
 @import './sections/featured-product';
 @import './sections/products-list';
 @import './snippets/product-card';
-
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo-container {
-  height: 15vw;
-}
-
-.navigation-menu {
-  display: flex;
-  align-items: center;
-  flex-grow: 3;
-  justify-content: space-around;
-  height: 4vw;
-}
 
 .thumbnail-container {
   display: flex;
