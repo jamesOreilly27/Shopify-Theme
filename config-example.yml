@@ -5,3 +5,4 @@ development:
   proxy: http://localhost:3000
   ignore_files:
     config/settings_data.json
+    
