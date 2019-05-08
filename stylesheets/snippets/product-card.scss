@@ -34,3 +34,9 @@
     flex-direction: column;
   }
 }
+
+@media(min-width: 600px) {
+  .product-card__wrapper {
+    height: 40vw;
+  }
+}
