@@ -4,9 +4,10 @@
   flex-direction: column;
   align-items: center;
   width: 30vw;
-  height: 30vw;
-  min-width: 300px;
-  min-height: 250px;
+
+  img {
+    width: 110%;
+  }
 }
 
 .product-card__text {
@@ -14,4 +15,22 @@
   flex-direction: column;
   align-items: center;
   font-size: 2vw;
+}
+
+@media(max-width: 600px) {
+  .product-card__wrapper {
+    width: 80vw;
+  }
+
+  .product-card__image {
+    margin-bottom: -12px;
+  }
+
+  .product-card__text {
+    font-size: 12px;
+  }
+
+  #products-list-container {
+    flex-direction: column;
+  }
 }
