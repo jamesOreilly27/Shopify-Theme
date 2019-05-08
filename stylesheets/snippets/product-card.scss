@@ -1,22 +1,42 @@
 .product-card__wrapper {
-  //take
   background-color: $bg-color-wrapper;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30vw;
-  height: 30vw;
+
+  img {
+    width: 110%;
+  }
 }
 
 .product-card__text {
-  //take
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 2vw;
 }
 
-.product-card__image img {
-  //take
-  width: 20vw;
-  height: 20vw;
+@media(max-width: 600px) {
+  .product-card__wrapper {
+    width: 80vw;
+  }
+
+  .product-card__image {
+    margin-bottom: -12px;
+  }
+
+  .product-card__text {
+    font-size: 12px;
+  }
+
+  #products-list-container {
+    flex-direction: column;
+  }
+}
+
+@media(min-width: 600px) {
+  .product-card__wrapper {
+    height: 40vw;
+  }
 }
